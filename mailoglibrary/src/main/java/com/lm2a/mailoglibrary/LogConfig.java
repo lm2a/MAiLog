@@ -79,7 +79,7 @@ public class LogConfig {
 
     public void saveLogcat() {
         try {
-            Process process = Runtime.getRuntime().exec("logcat -d "+MAiLog.TAG+":V *:S");//new String[]{"logcat", "-f", "MainActivity:V", "*:S"});//
+            Process process = Runtime.getRuntime().exec("logcat -d "+MAiLog.TAG+":V *:S");
             BufferedReader bufferedReader = new BufferedReader(
                     new InputStreamReader(process.getInputStream()));
 
